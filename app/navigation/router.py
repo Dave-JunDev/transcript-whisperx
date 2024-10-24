@@ -1,6 +1,7 @@
 import streamlit as st
 from views.login import Login
 from views.video import Video
+from views.chat import Chat
 
 pages = {
     "Login" : [
@@ -8,6 +9,9 @@ pages = {
     ],
     "Video IA" : [
         st.Page(Video, title="Video transcript")
+    ],
+    "Chat IA" : [
+        st.Page(Chat, title="Chat transcript")
     ]
 }
 
